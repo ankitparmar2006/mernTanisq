@@ -1,0 +1,70 @@
+{
+   "Jewellery":[
+
+    {
+
+
+        "id":2,
+        "name":"anakdkd",
+        "category":"diamond",
+        "price":694,
+        "image":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw0e12ff2a/images/hi-res/511018DIFAGA00_1.jpg?sw=640&sh=640",
+        "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw9061fd6d/images/hi-res/511018DIFAGA00_2.jpg?sw=640&sh=640"    
+    },
+        {
+
+
+        "id":1,
+        "name":"Flashy Floral Stud Earrings",
+        "category":"Gold",
+        "price":41294,
+        "image":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwb418fe2f/images/hi-res/515090SBUAGA00_1.jpg?sw=640&sh=640",
+        "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw9061fd6d/images/hi-res/511018DIFAGA00_2.jpg?sw=640&sh=640"    
+
+        },
+      
+            {
+
+
+                "id":2,
+                "name":"anakdkd",
+                "category":"diamond",
+                "price":694,
+                "image":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwb418fe2f/images/hi-res/515090SBUAGA00_1.jpg?sw=640&sh=640",
+                "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw9061fd6d/images/hi-res/511018DIFAGA00_2.jpg?sw=640&sh=640"    
+
+                },  
+                  {
+
+
+                    "id":2,
+                    "name":"anakdkd",
+                    "category":"diamond",
+                    "price":694,
+                    "image":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwb418fe2f/images/hi-res/515090SBUAGA00_1.jpg?sw=640&sh=640",
+                    "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw9061fd6d/images/hi-res/511018DIFAGA00_2.jpg?sw=640&sh=640"    
+
+                    },    {
+
+
+                        "id":2,
+                        "name":"anakdkd",
+                        "category":"diamond",
+                        "price":694,
+                        "image":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwb418fe2f/images/hi-res/515090SBUAGA00_1.jpg?sw=640&sh=640",
+                        "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw9061fd6d/images/hi-res/511018DIFAGA00_2.jpg?sw=640&sh=640"    
+
+                        },
+                        {
+
+
+                            "id":2,
+                            "name":"anakdkd",
+                            "category":"diamond",
+                            "price":694,
+                            "image":"https://images.pexels.com/photos/4723038/pexels-photo-4723038.jpeg",
+                            "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw9061fd6d/images/hi-res/511018DIFAGA00_2.jpg?sw=640&sh=640"    
+
+                            }
+    ]
+}

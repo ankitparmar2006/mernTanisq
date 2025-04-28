@@ -1,0 +1,184 @@
+#top-header {
+  width: 100%;
+  height: 80px;
+  background-color: rgba(218, 215, 29, 0.788);
+}
+
+.nav-search-btn {
+  width: 480px;
+  height: 42px;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-left:0px;
+  background-color: white;
+}
+.nav-search-btn::placeholder {
+  color:  rgba(218, 215, 29, 0.788);
+  padding-left: 20PX;
+  font-size: 14px;
+}
+
+#mic{
+margin-left: -120px;
+font-size: 21px;
+color:  rgb(218, 215, 29);
+}
+
+#camera{
+margin-left: 10px;
+font-size: 21px;
+color:  rgb(218, 215, 29);
+
+}
+#search{
+  margin-left: 10px;
+  font-size: 22px;
+color:  white;
+
+
+}
+#top-icons{
+  gap: 30px;
+  font-weight: 600;
+}
+#nav-font{
+  color: black;
+}
+#diamond{
+  font-size: 30px;
+  color: rgba(58, 56, 2, 0.788)  ;
+}
+#store{
+  font-size: 30px;
+  color: rgba(58, 56, 2, 0.788)  ;}
+#account{
+  font-size: 30px;
+  color: rgba(58, 56, 2, 0.788)  ;
+
+}
+#wishlist{
+  font-size: 30px;
+  color: rgba(58, 56, 2, 0.788)  ;
+
+}
+#heart{
+  font-size: 30px;
+  color: rgba(58, 56, 2, 0.788)  ;
+
+}
+#cart{
+  font-size: 30px;
+  color: rgba(58, 56, 2, 0.788)  ;
+
+}
+
+
+/* ========================  TOP HEADER END HERE ========================================== */
+
+
+#main-navbar{
+  margin-top:-24px;
+  background-color: rgba(116, 114, 7, 0.788) ;
+  height: 50px;
+  padding-top: 20px;
+}
+
+#main-nav-font{
+  color: white;
+
+}
+
+
+
+
+
+
+#app {
+    height: 100%;
+  }
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+  
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+  }
+  
+  .autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+  }
+  /* ======================================  GOLD EARRING WORK START FROM HERE ======================================= */
+
+  
+  #h2-top-heading{
+    margin-left: 390px;
+     color:  rgba(116, 114, 7, 0.788) ;
+     font-size: 40px;
+      margin-bottom: 40px;
+      margin-top: -20px;
+  }
+
+  #jewellery-data{
+
+display: flex;
+flex-wrap: wrap;
+gap: 40px;
+width: 80%;
+margin: auto;
+  }
