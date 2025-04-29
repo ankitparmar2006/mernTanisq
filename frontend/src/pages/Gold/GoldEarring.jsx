@@ -1,6 +1,8 @@
 
 import CustomLineDesign from "../LineImage";
 import Cart from "../../component/cart";
+
+
 const GoldEarring=()=>{
 
 
@@ -8,14 +10,15 @@ const GoldEarring=()=>{
       <>
       <div>
     <CustomLineDesign/>
-</div>
+</div> 
 
 
       <h2 id="h2-top-heading"> GOLD EARRINGS JEWELLERY</h2>
 
 
-<Cart/>
+<Cart type="Earring" />
       </>
     )
   }
   export default GoldEarring;
+

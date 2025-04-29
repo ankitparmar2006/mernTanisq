@@ -5,6 +5,12 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+
+
+
 //==================================  React swiper imports ====================================================
 import React, { useRef } from 'react';
 // Import Swiper React components
@@ -55,6 +61,11 @@ const Layout=()=>{
       progressCircle.current.style.setProperty('--progress', 1 - progress);
       progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
     };
+
+    const Product =useSelector(state=>state.mycart.cart);
+    console.log(Product);
+    const proLength=Product.length;
+    const navigate=useNavigate();
     return(
       <>
 
@@ -89,7 +100,17 @@ const Layout=()=>{
             <Nav.Link  id='nav-font' href="#features"><FaStore id='store'/> <br /> STORE </Nav.Link>
             <Nav.Link id='nav-font' href="#pricing">< MdAccountCircle id='account'/> <br /> ACCOUNT </Nav.Link>
             <Nav.Link id='nav-font' href="#pricing"><FaRegHeart id='heart' /> <br /> WISHLIST </Nav.Link>
-            <Nav.Link id='nav-font' href="#pricing"><BsCartDash id='cart'/> <br /> CART </Nav.Link>
+            <Nav.Link id='nav-font' >    <a href="#" onClick={()=>{navigate("/cartdata")}}>
+
+
+
+<BsCartDash id='cart'/>
+
+</a> {proLength}
+<br /> CART </Nav.Link>
+
+
+         
           
           </Nav>
         </Container>
@@ -112,9 +133,9 @@ const Layout=()=>{
             <Nav.Link id='main-nav-font' as={Link} to="home">ALL JEWELLERY</Nav.Link>
 
             <Nav.Link id='main-nav-font' as={Link} to="goldearring">EARRINGS</Nav.Link>
-            <Nav.Link id='main-nav-font' as={Link} to="home">RINGS</Nav.Link>
-            <Nav.Link id='main-nav-font' as={Link} to="home">NACkLESS</Nav.Link>
-            <Nav.Link id='main-nav-font' as={Link} to="home">BANGLES</Nav.Link>
+            <Nav.Link id='main-nav-font' as={Link} to="goldring">RINGS</Nav.Link>
+            <Nav.Link id='main-nav-font' as={Link} to="goldnackless">NACkLESS</Nav.Link>
+            <Nav.Link id='main-nav-font' as={Link} to="goldbangle">BANGLES</Nav.Link>
 
             <NavDropdown title="CATEGORY" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
