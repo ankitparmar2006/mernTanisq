@@ -7,6 +7,7 @@ import GoldNackless from "./pages/Gold/GoldNackless";
 import GoldBangles from "./pages/Gold/GoldBangles";
 import CartData from "./pages/CartData";
 import Checkout from "./pages/Checkout";
+import ProductDisplay from "./pages/ProductDisplay";
 const App=()=>{
     return(
         <>
@@ -21,6 +22,7 @@ const App=()=>{
 <Route path="goldbangle" element={<GoldBangles/>}/>
 <Route path="cartdata" element={<CartData/>}/>
 <Route path="checkout" element={<Checkout/>}/>
+<Route path="productdisplay/:id" element={<ProductDisplay/>}/>
 
 
 

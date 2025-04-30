@@ -7,13 +7,17 @@ import { addtoCart } from '../cartSlice';
 
 import {useDispatch} from 'react-redux'; 
 
+import { IoStarHalfOutline } from "react-icons/io5";
+import { useNavigate } from 'react-router-dom';
 
 const Cart =({type})=>{
 
     const [myData , setMyData]=useState([]);
     const [hoverIndex ,setHoverIndex]=useState(null);
 
-    const dispatch=useDispatch(); 
+    const dispatch=useDispatch();
+    const navigate=useNavigate();
+ 
 
     const loardData=async()=>{
       let api="http://localhost:3000/Jewellery";
@@ -26,6 +30,14 @@ const Cart =({type})=>{
       loardData();
       },[])
 
+
+      
+ const ProDisplay=(id)=>{
+
+
+  navigate(`/productdisplay/${id}`);
+  }
+  
     
   const filteredData=type ? myData.filter(item=>
 item.type=== type)
@@ -33,23 +45,41 @@ item.type=== type)
     const ans=filteredData.map((key,index)=>{
       return(
 
-        <Card style={{ width: '20rem' }} key={key.id}>
+        <Card style={{ width: '330px' }} key={key.id}>
 
           <div onMouseEnter={()=>setHoverIndex(index)} 
                 onMouseLeave={()=>setHover(null)}
             >
+        <a href="#" onClick={()=>{ProDisplay(key.id)}}>
 
-          <Card.Img variant="top" src={ hoverIndex === index ? key.secimg : key.image} />
+          <Card.Img variant="top" src={ hoverIndex === index ? key.secimg : key.image} style={{  height:"280px"}} />
+          </a>
           </div>
 
           <Card.Body>
             <Card.Title>{key.name}</Card.Title>
             <Card.Text>
-              Category {key.category}
-            <span>   <FaIndianRupeeSign/> {key.price}</span> 
-            <span>type : {key.type}</span>
+            <h5> Price :  <FaIndianRupeeSign/> {key.price}</h5> 
+              Category : {key.type} <br />             <br />
+
+            <div style={{display:'flex', textAlign:"center" }}  >
+
+
+          <h6> <IoStarHalfOutline/>  Rating   </h6>   <h6 style={{
+  backgroundColor: key.rating >= 8.5 ? "rgba(116, 114, 7, 0.788)" : "Orange",
+  width: "40px",
+  height: "25px",
+  paddingTop: "2px",
+  borderRadius: "50%",
+  color: "white",
+  textAlign: "center"
+  
+}}>
+  {key.rating}
+</h6>
+            </div>
             </Card.Text>
-            <Button variant="primary"  onClick={()=>{dispatch(addtoCart({id:key.id,name:key.name,category:key.category,type:key.type,price:key.price,image:key.image ,secimg:key.secimg ,qnty:1}))}}>Add to Cart</Button>
+            <Button variant="primary"  onClick={()=>{dispatch(addtoCart({id:key.id,name:key.name,category:key.category,type:key.type,price:key.price,image:key.image ,secimg:key.secimg ,rating:key.rating,qnty:1}))}}>Add to Cart</Button>
           </Card.Body>
         </Card>
     

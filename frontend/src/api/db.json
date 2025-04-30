@@ -9,7 +9,8 @@
         "type":"Earring",
         "price":36000,
         "image":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw0e12ff2a/images/hi-res/511018DIFAGA00_1.jpg?sw=640&sh=640",
-        "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw9061fd6d/images/hi-res/511018DIFAGA00_2.jpg?sw=640&sh=640"
+        "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw9061fd6d/images/hi-res/511018DIFAGA00_2.jpg?sw=640&sh=640",
+        "rating":8.5
         
     },
         {
@@ -21,8 +22,10 @@
         "type":"Earring",
         "price":41294,
         "image":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwb418fe2f/images/hi-res/515090SBUAGA00_1.jpg?sw=640&sh=640",
-        "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwd100f074/images/hi-res/515090SBUAGA00_2.jpg?sw=640&sh=640"
-        },
+        "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwd100f074/images/hi-res/515090SBUAGA00_2.jpg?sw=640&sh=640",        
+        "rating":8.7
+
+    },
       
 
             {
@@ -34,8 +37,8 @@
                 "type":"Earring",
                 "price":42887,
                 "image":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwf49da887/images/hi-res/515090JDCAGA00_1.jpg?sw=640&sh=640",
-                "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw1a02058c/images/hi-res/515090JDCAGA00_2.jpg?sw=640&sh=640"    
-
+                "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw1a02058c/images/hi-res/515090JDCAGA00_2.jpg?sw=640&sh=640"    ,        
+                "rating":6.8
                 },  
                   {
 
@@ -46,8 +49,8 @@
                     "type":"Earring",
                     "price":27151,
                     "image":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw4331fdca/images/hi-res/512220DASAGA00_1.jpg?sw=640&sh=640",
-                    "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw74eb9b7e/images/hi-res/512220DASAGA00_2.jpg?sw=640&sh=640"    
-
+                    "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw74eb9b7e/images/hi-res/512220DASAGA00_2.jpg?sw=640&sh=640"    ,        
+                    "rating":7.3
                     },    {
 
 
@@ -57,8 +60,8 @@
                         "type":"Earring",
                         "price":44480,
                         "image":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwd4da7cf7/images/hi-res/511318DGSABACZ_1.jpg?sw=640&sh=640",
-                        "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw4be317ec/images/hi-res/511318DGSABACZ_2.jpg?sw=640&sh=640"    
-
+                        "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw4be317ec/images/hi-res/511318DGSABACZ_2.jpg?sw=640&sh=640"    ,        
+                        "rating":8.9
                         },
                         {
 
@@ -70,7 +73,8 @@
                             "price":46797,
                             "image":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw237cee84/images/hi-res/515090DABABA00_1.jpg?sw=640&sh=640",
                             "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw91152b77/images/hi-res/515090DABABA00_2.jpg?sw=640&sh=640"    
-
+                            ,        
+                            "rating":9.1
                             },
 
                             {
@@ -83,7 +87,8 @@
                                 "price":46797,
                                 "image":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw2d088589/images/hi-res/51D5B2FBMAACZ_1.jpg?sw=640&sh=640",
                                 "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw257a9646/images/hi-res/51D5B2FBMAACZ_2.jpg?sw=640&sh=640"    
-    
+                                ,        
+                                "rating":5.6
                                 },
                                 {
 
@@ -95,7 +100,8 @@
                                     "price":36889,
                                     "image":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwae7c36ba/images/hi-res/51D5B1FYZAACZ_1.jpg?sw=640&sh=640",
                                     "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw83aea295/images/hi-res/51D5B1FYZAACZ_2.jpg?sw=640&sh=640"    
-        
+                                    ,        
+                                    "rating":8.2
                                     },
                                     {
                                         "id":9,
@@ -105,7 +111,8 @@
                                         "price":2249,
                                         "image":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw4cf0f4cd/images/hi-res/51D5B2FSVAA00_1.jpg?sw=640&sh=640",
                                         "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw0289387d/images/hi-res/51D5B2FSVAA00_2.jpg?sw=640&sh=640"    
-            
+                                        ,        
+                                        "rating":7.6
                                         },
                                         {
                                             "id":10,
@@ -115,7 +122,8 @@
                                             "price":169986,
                                             "image":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw098b2453/images/hi-res/50E4SRFAKA137_1.jpg?sw=640&sh=640",
                                             "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwd7107fd3/images/hi-res/50E4SRFAKA137_3.jpg?sw=640&sh=640"    
-                                            },
+                                            ,        
+                                            "rating":4.9  },
 
                                             {
                                                 "id":11,
@@ -125,7 +133,10 @@
                                                 "price":129986,
                                                 "image":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwea1ccbe7/images/hi-res/50E4SRFADA237_1.jpg?sw=640&sh=640",
                                                 "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw8da96f7d/images/hi-res/50E4SRFADA237_3.jpg?sw=640&sh=640"    
-                                                },
+                                               
+                                                ,        
+                                                "rating":9.8
+                                            },
                                                 
                                             {
                                                 "id":12,
@@ -135,7 +146,9 @@
                                                 "price":26899,
                                                 "image":" https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw6554d072/images/hi-res/501145FAWAB04_1.jpg?sw=640&sh=640",
                                                 "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwec915557/images/hi-res/501145FAWAB04_2.jpg?sw=640&sh=640"    
-                                                },
+                                                ,        
+                                                "rating":4.5   
+                                            },
 
                                                 {
                                                     "id":13,
@@ -145,7 +158,9 @@
                                                     "price":86899,
                                                     "image":" https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw00fce24e/images/hi-res/51O3I2NEGAA00_2.jpg?sw=640&sh=640",
                                                     "secimg":" https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw7cfdc035/images/hi-res/51O3I2NEGAA00_1.jpg?sw=640&sh=640"    
-                                                    },
+                                                    ,        
+                                                    "rating":6.9 
+                                                },
                                                
                                                     {
                                                         "id":14,
@@ -155,7 +170,10 @@
                                                         "price":13629,
                                                         "image":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw35095e92/images/hi-res/51D4C11FUABA00_1.jpg?sw=640&sh=640 ",
                                                         "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw3e8e011c/images/hi-res/51D4C11FUABA00_2.jpg?sw=640&sh=640 "    
-                                                        },    
+                                                     
+                                                        ,        
+                                                        "rating":8.1
+                                                    },    
                                                              {
                                                             "id":15,
                                                             "name":"Pristine Grandiosity Floral Necklace Set",
@@ -164,7 +182,9 @@
                                                             "price":76899,
                                                             "image":" https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw2833d996/images/hi-res/5150912AQABACZ_1.jpg?sw=640&sh=640 ",
                                                             "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw74902764/images/hi-res/5150912AQABACZ_2.jpg?sw=640&sh=640 "    
-                                                            },
+                                                            ,        
+                                                            "rating":8.4  
+                                                        },
                                                             {
                                                                 "id":16,
                                                                 "name":" Enigmatic Allure Necklace Set",
@@ -173,7 +193,9 @@
                                                                 "price":295388,
                                                                 "image":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw11bcc988/images/hi-res/5150912AOABACZ_1.jpg?sw=640&sh=640 ",
                                                                 "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwca250f5d/images/hi-res/5150912AOABACZ_2.jpg?sw=640&sh=640 "    
-                                                                },
+                                                                ,        
+                                                                "rating":8.9  
+                                                            },
                                                                 {
                                                                     "id":17,
                                                                     "name":" Enigmatic Gold Pendant and Earrings Set",
@@ -182,16 +204,21 @@
                                                                     "price":76899,
                                                                     "image":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwb767dba6/images/hi-res/51D3D11NRABA00_1.jpg?sw=640&sh=640",
                                                                     "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw7883ed2e/images/hi-res/51D3D11NRABA00_4.jpg?sw=640&sh=640 "    
-                                                                    },
+                                                                    ,        
+                                                                    "rating":6.6
+                                                                },
                                                                     {
                                                                         "id":18,
-                                                                        "name":" ",
+                                                                        "name":" Golden Nackless  ",
                                                                         "category":"Gold",
                                                                         "type":"Nackless",
                                                                         "price":128899,
                                                                         "image":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw5c309aa7/images/hi-res/51M5B1CIHAA00_1.jpg?sw=640&sh=640 ",
                                                                         "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw8e2f01f8/images/hi-res/51M5B1CIHAA00_2.jpg?sw=640&sh=640 "    
-                                                                        },
+                                                                     
+                                                                        ,        
+                                                                        "rating":9.8
+                                                                    },
 
                                                                         {
                                                                             "id":19,
@@ -201,7 +228,9 @@
                                                                             "price":1088153,
                                                                             "image":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw09350c2e/images/hi-res/512758VHU1A08_1.jpg?sw=640&sh=640",
                                                                             "secimg":" https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw91b3b14c/images/hi-res/512758VHU1A08_2.jpg?sw=640&sh=640 "    
-                                                                            },
+                                                                            ,        
+                                                                            "rating":7.7
+                                                                        },
                                                                             {
                                                                                 "id":20,
                                                                                 "name":" Intertwined Diamond Bangles",
@@ -210,7 +239,10 @@
                                                                                 "price":128866,
                                                                                 "image":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw84305d76/images/hi-res/50O6PTVHY2A09_1.jpg?sw=640&sh=640",
                                                                                 "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw050d9569/images/hi-res/50O6PTVHY2A09_2.jpg?sw=640&sh=640 "    
-                                                                                },
+                                                                              
+                                                                                ,        
+                                                                                "rating":9.8
+                                                                            },
                                                                                 {
                                                                                     "id":21,
                                                                                     "name":"Stunning Alternate Link Pattern Square Diamond Bangle ",
@@ -219,7 +251,9 @@
                                                                                     "price":447375,
                                                                                     "image":" https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwf78aee2d/images/hi-res/501801VCI1A02_1.jpg?sw=640&sh=640",
                                                                                     "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw3fe69322/images/hi-res/501801VCI1A02_2.jpg?sw=640&sh=640 "    
-                                                                                    },
+                                                                                    ,        
+                                                                                    "rating":7.6   
+                                                                                },
                                                                                     {
                                                                                         "id":22,
                                                                                         "name":" 18 Karat Gold and Diamond Bangle",
@@ -228,7 +262,9 @@
                                                                                         "price":128899,
                                                                                         "image":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwe089770c/images/hi-res/502116VAM1A02_1.jpg?sw=640&sh=640",
                                                                                         "secimg":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwa671352c/images/hi-res/502116VAM1A02_2.jpg?sw=640&sh=640"    
-                                                                                        },
+                                                                                        ,        
+                                                                                        "rating":9.1  
+                                                                                    },
                                                                                         {
                                                                                             "id":23,
                                                                                             "name":" Elegant Diamond Bangle",
@@ -237,16 +273,20 @@
                                                                                             "price":328899,
                                                                                             "image":" https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw492f281e/images/hi-res/500776VVABA04_1.jpg?sw=640&sh=640",
                                                                                             "secimg":" https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw892584b9/images/hi-res/500776VVABA04_2.jpg?sw=640&sh=640 "    
-                                                                                            },
+                                                                                            ,        
+                                                                                            "rating":8.7   
+                                                                                        },
                                                                                             {
                                                                                                 "id":24,
-                                                                                                "name":"Luxurious Diamond Bangle",
+                                                                                                "name":"Luxurious Diamond Bangle  ",
                                                                                                 "category":"Gold",
                                                                                                 "type":"Bangles",
                                                                                                 "price":328899,
                                                                                                 "image":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw830b0a8a/images/hi-res/50D3P1VXK1A08_1.jpg?sw=640&sh=640",
                                                                                                 "secimg":" https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwc4fab7ae/images/hi-res/50D3P1VXK1A08_2.jpg?sw=640&sh=640 "    
-                                                                                                }
+                                                                                                ,        
+                                                                                                "rating":8.8 
+                                                                                            }
                                                                 
 
                                                                                                 

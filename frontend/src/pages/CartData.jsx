@@ -29,23 +29,30 @@ const CartData=()=>{
     <td>{key.price}</td>
     <td style={{fontSize:"20px", paddingLeft:"30px"}}>
 
-    <a href="#" onClick={()=>{dispatch(qntyDecrease({id:key.id}))}}>
+    <a href="#" onClick={(e)=>{  e.preventDefault(); dispatch(qntyDecrease({id:key.id}))  }}>
+    
+    <span style={{ color:"rgba(116, 114, 7, 0.788)"}}> 
+
     <FaCircleMinus />
 
-
+</span>
     </a>
     {key.qnty}
   
-  <a href="#" onClick={()=>{dispatch(qntyIncrese({id:key.id}))}}>
+  <a href="#" onClick={(e)=>{  e.preventDefault(); dispatch(qntyIncrese({id:key.id}))}}>
 
+<span style={{ color:"rgba(116, 114, 7, 0.788)"}}> 
 
   <FaPlusCircle />
+</span>
   </a>
 
     </td>
     <td>{key.price*key.qnty}</td>
     <td>
-      <button onClick={()=>{dispatch(dataRemove({id:key.id}))}}>Remove</button>
+
+
+      <Button onClick={()=>{dispatch(dataRemove({id:key.id}))}}>Remove</Button>
     </td>
 
 </tr>
@@ -55,7 +62,10 @@ const CartData=()=>{
     })
     return(
         <>
+        <center>
+
         <h1>MY CART </h1>
+        </center>
 
 <h1>Total Amount  <FaRupeeSign />
 {netAmount}</h1>
