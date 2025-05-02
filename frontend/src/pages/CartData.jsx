@@ -51,7 +51,6 @@ const CartData=()=>{
     <td>{key.price*key.qnty}</td>
     <td>
 
-
       <Button onClick={()=>{dispatch(dataRemove({id:key.id}))}}>Remove</Button>
     </td>
 

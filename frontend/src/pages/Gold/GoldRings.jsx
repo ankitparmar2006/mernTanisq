@@ -1,11 +1,7 @@
 
-
-
-
-
-
 import CustomLineDesign from "../LineImage";
 import Cart from "../../component/cart";
+import Footer from "../../component/Footer";
 const GoldRing=()=>{
 
 
@@ -20,6 +16,11 @@ const GoldRing=()=>{
 
 
 <Cart type="Rings" />
+<div>
+    <CustomLineDesign/>
+</div> 
+
+<Footer/>
       </>
     )
   }

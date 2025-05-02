@@ -8,7 +8,21 @@ import GoldBangles from "./pages/Gold/GoldBangles";
 import CartData from "./pages/CartData";
 import Checkout from "./pages/Checkout";
 import ProductDisplay from "./pages/ProductDisplay";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const App=()=>{
+
+    useEffect(()=>{
+        AOS.init({
+            duration:1000,
+            once:true,
+
+        })
+    },[])
     return(
         <>
         <BrowserRouter>
@@ -24,13 +38,14 @@ const App=()=>{
 <Route path="checkout" element={<Checkout/>}/>
 <Route path="productdisplay/:id" element={<ProductDisplay/>}/>
 
+<Route path="signin" element={<Checkout/>}/>
 
 
 
             </Route>
         </Routes>
         </BrowserRouter>
-        
+        <ToastContainer />
         </>
     )
 }

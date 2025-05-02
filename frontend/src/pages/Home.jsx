@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import Footer from '../component/Footer';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -121,6 +122,10 @@ const Home=()=>{
     <CustomLineDesign/>
 </div> 
 
+
+
+
+<Footer/>
       </>
     )
   }

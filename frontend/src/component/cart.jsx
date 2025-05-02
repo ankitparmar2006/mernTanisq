@@ -4,11 +4,14 @@ import { useState ,useEffect } from 'react';
 import axios from "axios";
 import { FaIndianRupeeSign } from "react-icons/fa6";
 import { addtoCart } from '../cartSlice'; 
+import 'react-toastify/dist/ReactToastify.css';
 
 import {useDispatch} from 'react-redux'; 
 
 import { IoStarHalfOutline } from "react-icons/io5";
 import { useNavigate } from 'react-router-dom';
+
+
 
 const Cart =({type})=>{
 
@@ -45,7 +48,7 @@ item.type=== type)
     const ans=filteredData.map((key,index)=>{
       return(
 
-        <Card style={{ width: '330px' }} key={key.id}>
+        <Card style={{ width: '330px' }} key={key.id} data-aos="zoom-in">
 
           <div onMouseEnter={()=>setHoverIndex(index)} 
                 onMouseLeave={()=>setHover(null)}
@@ -79,18 +82,28 @@ item.type=== type)
 </h6>
             </div>
             </Card.Text>
-            <Button variant="primary"  onClick={()=>{dispatch(addtoCart({id:key.id,name:key.name,category:key.category,type:key.type,price:key.price,image:key.image ,secimg:key.secimg ,rating:key.rating,qnty:1}))}}>Add to Cart</Button>
+
+            <Button variant="primary"  onClick={()=>{ dispatch(addtoCart({id:key.id,name:key.name,category:key.category,type:key.type,price:key.price,image:key.image ,secimg:key.secimg ,rating:key.rating,qnty:1})
+)}} style={{backgroundColor:"  rgb(116, 114, 7) "}} >Add to Cart            
+ </Button>
+            
+
+
+            <a href="#" onClick={()=>{ProDisplay(key.id)}}>
+            <Button style={{marginLeft:"90px"}} id='buy-buy-btn' >Buy Now</Button>
+            </a>
           </Card.Body>
         </Card>
     
       )
-    })
+    }) 
     
 return(
     <>
 
 <div id='jewellery-data'>
     {ans}
+    
 </div>
 
 

@@ -3,6 +3,8 @@
 
 import CustomLineDesign from "../LineImage";
 import Cart from "../../component/cart";
+
+import Footer from "../../component/Footer";
 const GoldNackless=()=>{
 
 
@@ -17,6 +19,13 @@ const GoldNackless=()=>{
 
 
 <Cart type="Nackless" />
+
+
+<div>
+    <CustomLineDesign/>
+</div> 
+
+<Footer/>
       </>
     )
   }
