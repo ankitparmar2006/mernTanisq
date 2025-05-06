@@ -13,7 +13,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import Login from "./component/Login";
 const App=()=>{
 
     useEffect(()=>{
@@ -38,8 +37,6 @@ const App=()=>{
 <Route path="checkout" element={<Checkout/>}/>
 <Route path="productdisplay/:id" element={<ProductDisplay/>}/>
 
-<Route path="signin" element={<Checkout/>}/>
-<Route path="login" element={<Login/>}/>
             </Route>
         </Routes>
         </BrowserRouter>
