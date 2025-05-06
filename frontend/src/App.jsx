@@ -10,10 +10,10 @@ import Checkout from "./pages/Checkout";
 import ProductDisplay from "./pages/ProductDisplay";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Login from "./component/Login";
 const App=()=>{
 
     useEffect(()=>{
@@ -39,9 +39,7 @@ const App=()=>{
 <Route path="productdisplay/:id" element={<ProductDisplay/>}/>
 
 <Route path="signin" element={<Checkout/>}/>
-
-
-
+<Route path="login" element={<Login/>}/>
             </Route>
         </Routes>
         </BrowserRouter>

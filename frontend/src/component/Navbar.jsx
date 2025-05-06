@@ -36,6 +36,7 @@ const Navbarmain=()=>{
             <Nav.Link id='main-nav-font' as={Link} to="goldring">RINGS</Nav.Link>
             <Nav.Link id='main-nav-font' as={Link} to="goldnackless">NACKLESS</Nav.Link>
             <Nav.Link id='main-nav-font' as={Link} to="goldbangle">BANGLES</Nav.Link>
+            <Nav.Link id='main-nav-font' as={Link} to="login">log</Nav.Link>
 
             <NavDropdown title="CATEGORY" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
