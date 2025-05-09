@@ -1,4 +1,5 @@
-import { BrowserRouter,Route ,Routes } from "react-router-dom";
+// App.js
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./pages/Home";
 import GoldEarring from "./pages/Gold/GoldEarring";
@@ -13,36 +14,50 @@ import 'react-toastify/dist/ReactToastify.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-const App=()=>{
+import { AuthProvider } from './context/AuthContext'; // Import AuthProvider
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import AccountMenu from "./component/Profile";
+import Profile from "./component/Profile";
 
-    useEffect(()=>{
+
+const App = () => {
+
+    useEffect(() => {
         AOS.init({
-            duration:1000,
-            once:true,
+            duration: 1000,
+            once: true,
+        });
+    }, []);
 
-        })
-    },[])
-    return(
+    return (
         <>
-        <BrowserRouter>
-        <Routes>
-            <Route path="/" element={<Layout/>}>
-            <Route index element={<Home/>}/>
-            <Route path="home" element={<Home/>}/>
-<Route path="goldearring" element={<GoldEarring/>}/>
-<Route path="goldring" element={<GoldRing/>}/>
-<Route path="goldnackless" element={<GoldNackless/>}/>
-<Route path="goldbangle" element={<GoldBangles/>}/>
-<Route path="cartdata" element={<CartData/>}/>
-<Route path="checkout" element={<Checkout/>}/>
-<Route path="productdisplay/:id" element={<ProductDisplay/>}/>
+            <AuthProvider> {/* Wrap your app in AuthProvider */}
+                <BrowserRouter>
+                    <Routes>
+                        <Route path="/" element={<Layout />}>
+                            <Route index element={<Home />} />
+                            <Route path="home" element={<Home />} />
+                            <Route path="goldearring" element={<GoldEarring />} />
+                            <Route path="goldring" element={<GoldRing />} />
+                            <Route path="goldnackless" element={<GoldNackless />} />
+                            <Route path="goldbangle" element={<GoldBangles />} />
+                            <Route path="cartdata" element={<CartData />} />
+                            <Route path="checkout" element={<Checkout />} />
+                            <Route path="productdisplay/:id" element={<ProductDisplay />} />
+                            <Route path="login" element={<Login />} />
+                            <Route path="signin" element={<Signup />} />
 
-            </Route>
-        </Routes>
-        </BrowserRouter>
-        <ToastContainer />
+
+<Route path="profile" element={<Profile />} />
+
+                        </Route>
+                    </Routes>
+                </BrowserRouter>
+            </AuthProvider>
+            <ToastContainer />
         </>
-    )
-}
+    );
+};
 
 export default App;

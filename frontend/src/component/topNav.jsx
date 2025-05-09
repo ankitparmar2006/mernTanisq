@@ -18,7 +18,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const TopNav=()=>{
     
 
@@ -59,7 +59,7 @@ const TopNav=()=>{
           <Nav id='top-icons'>
             <Nav.Link id='nav-font' href="#home"><IoDiamondOutline id='diamond'/> <br /> DIAMOND</Nav.Link>
             <Nav.Link  id='nav-font' href="#features"><FaStore id='store'/> <br /> STORE </Nav.Link>
-            <Nav.Link id='nav-font' href="#pricing">< MdAccountCircle id='account'/> <br /> ACCOUNT </Nav.Link>
+            <Nav.Link id='nav-font' as={Link} to="profile">< MdAccountCircle id='account'/> <br /> ACCOUNT </Nav.Link>
             <Nav.Link id='nav-font' href="#pricing"><FaRegHeart id='heart' /> <br /> WISHLIST </Nav.Link>
             <Nav.Link id='nav-font' >    <a href="#" onClick={()=>{navigate("/cartdata")}} style={{textDecoration:"none"}}>
 
