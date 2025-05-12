@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect } from 'react';
+import { createContext, useState } from 'react';
 
 export const AuthContext = createContext();
 
@@ -8,22 +8,14 @@ export const AuthProvider = ({ children }) => {
     return savedUser ? JSON.parse(savedUser) : null;
   });
 
-  // Update the state whenever localStorage changes (e.g. on login/logout)
-  useEffect(() => {
-    const savedUser = localStorage.getItem('user');
-    if (savedUser) {
-      setUser(JSON.parse(savedUser)); // Sync state with localStorage
-    }
-  }, []); // Runs once on mount, not on state change
-
   const login = (userData) => {
-    setUser(userData); // Set user in state
-    localStorage.setItem('user', JSON.stringify(userData)); // Store user in localStorage
+    setUser(userData);
+    localStorage.setItem('user', JSON.stringify(userData));
   };
 
   const logout = () => {
-    setUser(null); // Clear user state
-    localStorage.removeItem('user'); // Clear user from localStorage
+    setUser(null);
+    localStorage.removeItem('user');
   };
 
   return (

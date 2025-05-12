@@ -1,20 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
+import { AuthContext } from '../context/AuthContext'; // ✅ Import context
 import './Auth.css';
 
 const Login = () => {
   const [formData, setFormData] = useState({ email: '', password: '' });
   const navigate = useNavigate();
+  const { login } = useContext(AuthContext); // ✅ Get login method from context
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const res = await axios.post('http://localhost:5000/api/auth/login', formData);
+      const user = res.data.user;
 
-      const user = res.data.user; // assuming your backend sends user object
-      localStorage.setItem('user', JSON.stringify(user));
+      login(user); // ✅ Use context login (updates state + localStorage)
 
       toast.success('Login successful');
       navigate('/home');

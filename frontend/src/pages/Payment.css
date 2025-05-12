@@ -1,0 +1,58 @@
+h1{
+    color: rebeccapurple;
+}
+
+
+.App
+{
+    width: 300px;
+    margin: auto;
+    border: 3px solid grey;
+    border-radius: 20px;
+}
+
+.shoe_img
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+
+}
+
+.shoe_container
+{
+    text-align: center;
+}
+
+.shoe_name
+{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(51, 131, 243);
+}
+
+.shoe_creator
+{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(160, 165, 172);
+}
+
+.shoe_price
+{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(231, 75, 50); 
+}
+
+.buyBtn
+{
+    background-color: rgb(12, 206, 9);
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}

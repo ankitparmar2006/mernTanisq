@@ -12,25 +12,33 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Cart = ({ type }) => {
-  const [myData, setMyData] = useState([]);
-  const [hoverIndex, setHoverIndex] = useState(null);
+  const [myData, setMyData] = useState([]); // Data ko store karne ka state
+  const [hoverIndex, setHoverIndex] = useState(null); // Hover index track karne ka state
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { user } = useContext(AuthContext);
 
+  // Load data from both JSON server and MongoDB
   const loadData = async () => {
-    let api = "http://localhost:3000/Jewellery";
-    const res = await axios.get(api);
-    setMyData(res.data);
+    try {
+      const jsonRes = await axios.get("http://localhost:3000/Jewellery"); // JSON server ka data
+      const mongoRes = await axios.get("http://localhost:5000/api/products"); // MongoDB ka data
+
+      // Merge both data
+      const mergedData = [...jsonRes.data, ...mongoRes.data];
+      setMyData(mergedData); // Combine and set in state
+    } catch (error) {
+      console.error("Error loading data:", error);
+    }
   };
 
   useEffect(() => {
-    loadData();
+    loadData(); // Load data on component mount
   }, []);
 
   const ProDisplay = (id) => {
-    navigate(`/productdisplay/${id}`);
+    navigate(`/productdisplay/${id}`); // Navigate to product display page
   };
 
   const handleBuy = (product) => {
@@ -40,24 +48,25 @@ const Cart = ({ type }) => {
       return;
     }
 
-    // ✅ If logged in
+    // If logged in, proceed to buy
     console.log('Buying product:', product.name);
     toast.success(`Proceeding to buy: ${product.name}`);
     // TODO: Add further buy logic (maybe redirect to checkout)
   };
 
+  // Filter data based on the type (if provided)
   const filteredData = type
     ? myData.filter(item => item.type === type)
     : myData;
 
   const ans = filteredData.map((key, index) => {
     return (
-      <Card style={{ width: '330px' }} key={key.id} data-aos="zoom-in">
+      <Card style={{ width: '330px' }} key={key._id || key.id} data-aos="zoom-in">
         <div
           onMouseEnter={() => setHoverIndex(index)}
           onMouseLeave={() => setHoverIndex(null)}
         >
-          <a href="#" onClick={() => ProDisplay(key.id)}>
+          <a href="#" onClick={() => ProDisplay(key._id || key.id)}>
             <Card.Img
               variant="top"
               src={hoverIndex === index ? key.secimg : key.image}
@@ -91,7 +100,7 @@ const Cart = ({ type }) => {
             variant="primary"
             onClick={() => {
               dispatch(addtoCart({
-                id: key.id,
+                id: key._id || key.id,
                 name: key.name,
                 category: key.category,
                 type: key.type,

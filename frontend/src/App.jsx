@@ -17,8 +17,10 @@ import { useEffect } from "react";
 import { AuthProvider } from './context/AuthContext'; // Import AuthProvider
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-import AccountMenu from "./component/Profile";
 import Profile from "./component/Profile";
+import EditProduct from "./pages/admin/EditProduct";
+import AdminDashboard from "./pages/admin/AdminDashboard";
+import AddProduct from "./pages/admin/AddProduct";
 
 
 const App = () => {
@@ -50,6 +52,11 @@ const App = () => {
 
 
 <Route path="profile" element={<Profile />} />
+<Route path="/admin/edit/:id" element={<EditProduct />} />
+
+<Route path="/admin" element={<AdminDashboard />} />
+<Route path="/admin/add" element={<AddProduct />} />
+
 
                         </Route>
                     </Routes>
