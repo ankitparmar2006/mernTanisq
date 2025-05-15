@@ -34,17 +34,17 @@ const Navbarmain = () => {
             >
               <Nav.Link id='main-nav-font' as={Link} to="/home">HOME</Nav.Link>
               <Nav.Link id='main-nav-font' as={Link} to="/about">ABOUT</Nav.Link>
-              <Nav.Link id='main-nav-font' as={Link} to="/allproducts">ALL JEWELLERY</Nav.Link>
-              <Nav.Link id='main-nav-font' as={Link} to="/goldearring">EARRINGS</Nav.Link>
-              <Nav.Link id='main-nav-font' as={Link} to="/goldring">RINGS</Nav.Link>
+              <Nav.Link id='main-nav-font' as={Link} to="/home">All JEWELLERY</Nav.Link>
+              <Nav.Link id='main-nav-font' as={Link} to="/goldearring" >EARRINGS</Nav.Link>
+              <Nav.Link id='main-nav-font' as={Link} to="/goldring" >RINGS</Nav.Link>
               <Nav.Link id='main-nav-font' as={Link} to="/goldnackless">NECKLACE</Nav.Link>
-              <Nav.Link id='main-nav-font' as={Link} to="/goldbangle">BANGLES</Nav.Link>
+              <Nav.Link id='main-nav-font' as={Link} to="/goldbangle" >BANGLES</Nav.Link>
 
               <NavDropdown title="CATEGORY" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/goldring" >Rings</NavDropdown.Item>
+                <NavDropdown.Item  as={Link} to="/goldearring" >Earring</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">Something else here</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/goldbangle" >Bangles</NavDropdown.Item>
               </NavDropdown>
 
               {/* Conditional Rendering based on login status */}

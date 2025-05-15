@@ -26,18 +26,68 @@ const AddProduct = () => {
   };
 
   return (
-    <div>
-      <h2>Add New Product</h2>
-      <form onSubmit={handleSubmit}>
-        <input name="name" placeholder="Name" onChange={handleChange} required />
-        <input name="type" placeholder="Type" onChange={handleChange} required />
-        <input name="price" placeholder="Price" type="number" onChange={handleChange} required />
-        <input name="image" placeholder="Image URL" onChange={handleChange} />
-        <input name="secimg" placeholder="Secondary Image URL" onChange={handleChange} />
-        <input name="rating" placeholder="Rating" type="number" onChange={handleChange} />
-        <input name="sold" placeholder="Sold" type="number" onChange={handleChange} />
-        <button type="submit">Add Product</button>
-      </form>
+    <div className="d-flex justify-content-center align-items-center" style={{ minHeight: "100vh", background: "#f7f7f7" }}>
+      <div className="p-5 shadow rounded" style={{ background: "white", width: "100%", maxWidth: "500px" }}>
+        <h3 className="text-center mb-4" style={{ fontWeight: "bold", color: "#333" }}>Add New Product</h3>
+        <form onSubmit={handleSubmit}>
+          <input
+            className="form-control mb-3"
+            name="name"
+            placeholder="Product Name"
+            onChange={handleChange}
+            required
+          />
+          <input
+            className="form-control mb-3"
+            name="type"
+            placeholder="Product Type"
+            onChange={handleChange}
+            required
+          />
+          <input
+            className="form-control mb-3"
+            name="price"
+            placeholder="Price"
+            type="number"
+            onChange={handleChange}
+            required
+          />
+          <input
+            className="form-control mb-3"
+            name="image"
+            placeholder="Main Image URL"
+            onChange={handleChange}
+          />
+          <input
+            className="form-control mb-3"
+            name="secimg"
+            placeholder="Secondary Image URL"
+            onChange={handleChange}
+          />
+          <input
+            className="form-control mb-3"
+            name="rating"
+            placeholder="Rating (e.g., 8.5)"
+            type="number"
+            step="0.1"
+            onChange={handleChange}
+          />
+          <input
+            className="form-control mb-4"
+            name="sold"
+            placeholder="Items Sold"
+            type="number"
+            onChange={handleChange}
+          />
+          <button
+            type="submit"
+            className="btn btn-primary w-100"
+            style={{ backgroundColor: "rgb(116, 114, 7)", border: "none" }}
+          >
+            Add Product
+          </button>
+        </form>
+      </div>
     </div>
   );
 };

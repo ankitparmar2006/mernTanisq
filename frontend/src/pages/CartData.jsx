@@ -1,101 +1,99 @@
 import Table from 'react-bootstrap/Table';
-import { FaRupeeSign } from "react-icons/fa";
-import { FaPlusCircle } from "react-icons/fa";
+import { FaRupeeSign, FaPlusCircle } from "react-icons/fa";
 import { FaCircleMinus } from "react-icons/fa6";
-import { useDispatch } from 'react-redux';
-import { qntyIncrese ,qntyDecrease ,dataRemove} from '../cartSlice';
-import Button from 'react-bootstrap/esm/Button';
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from 'react-redux';
+import { qntyIncrese, qntyDecrease, dataRemove } from '../cartSlice';
+import Button from 'react-bootstrap/Button';
 import { useNavigate } from 'react-router-dom';
-const CartData=()=>{
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-    const proData=useSelector(state=>state.mycart.cart);
-    const dispatch=useDispatch();
-    const navigate=useNavigate();
-    let sno=0;
+const CartData = () => {
+  const proData = useSelector(state => state.mycart.cart);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  let netAmount = 0;
 
-    let netAmount=0;
-    const ans=proData.map((key)=>{
-      netAmount+=key.price *key.qnty;
-        sno++;
-        return(
-            <>
-<tr>
-    <td>{sno}</td>
-    <td><img src={key.image} width="100" height="100"/></td>
+  const handleQtyChange = (type, id) => {
+    if (type === "inc") dispatch(qntyIncrese({ id }));
+    else dispatch(qntyDecrease({ id }));
+  };
 
-    <td>{key.name}</td>
-    <td>{key.category}</td>
-    <td>{key.price}</td>
-    <td style={{fontSize:"20px", paddingLeft:"30px"}}>
+  const handleRemove = (id) => {
+    dispatch(dataRemove({ id }));
+    toast.info("Item removed from cart.");
+  };
 
-    <a href="#" onClick={(e)=>{  e.preventDefault(); dispatch(qntyDecrease({id:key.id}))  }}>
-    
-    <span style={{ color:"rgba(116, 114, 7, 0.788)"}}> 
+  return (
+    <div style={{ padding: "30px", fontFamily: "Arial, sans-serif" }}>
+      <center><h2 style={{ marginBottom: "30px", fontWeight: "700", color: "#4B0082" }}>🛒 My Cart</h2></center>
 
-    <FaCircleMinus />
+      <Table striped bordered hover responsive style={{ borderRadius: "10px", overflow: "hidden", boxShadow: "0 6px 20px rgba(0,0,0,0.1)" }}>
+        <thead style={{ backgroundColor: "#f0f0f0", fontWeight: "bold" }}>
+          <tr>
+            <th>S.No</th>
+            <th>Image</th>
+            <th>Product Name</th>
+            <th>Category</th>
+            <th>Price <FaRupeeSign /></th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {proData.map((item, index) => {
+            const total = item.price * item.qnty;
+            netAmount += total;
+            return (
+              <tr key={item.id}>
+                <td>{index + 1}</td>
+                <td><img src={item.image} width="90" height="90" style={{ borderRadius: "10px", objectFit: "cover" }} alt={item.name} /></td>
+                <td style={{ fontWeight: "600" }}>{item.name}</td>
+                <td>{item.category}</td>
+                <td>₹{item.price}</td>
+                <td style={{ fontSize: "18px", textAlign: "center" }}>
+                  <Button variant="light" onClick={() => handleQtyChange("dec", item.id)} style={{ border: "none", color: "#d35400" }}>
+                    <FaCircleMinus />
+                  </Button>
+                  <span style={{ margin: "0 10px" }}>{item.qnty}</span>
+                  <Button variant="light" onClick={() => handleQtyChange("inc", item.id)} style={{ border: "none", color: "#27ae60" }}>
+                    <FaPlusCircle />
+                  </Button>
+                </td>
+                <td>₹{total}</td>
+                <td>
+                  <Button variant="danger" size="sm" onClick={() => handleRemove(item.id)}>Remove</Button>
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </Table>
 
-</span>
-    </a>
-    {key.qnty}
-  
-  <a href="#" onClick={(e)=>{  e.preventDefault(); dispatch(qntyIncrese({id:key.id}))}}>
+      <div style={{ display: "flex", justifyContent: "flex-end", marginTop: "30px" }}>
+        <div style={{
+          backgroundColor: "#f8f9fa",
+          padding: "20px",
+          borderRadius: "15px",
+          boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+          minWidth: "300px",
+          textAlign: "right"
+        }}>
+          <h4>Total Amount: <FaRupeeSign /> {netAmount}</h4>
+          <Button
+            variant="success"
+            onClick={() => navigate("/checkout")}
+            style={{ marginTop: "10px", width: "100%", fontWeight: "bold" }}
+          >
+            Proceed to Checkout
+          </Button>
+        </div>
+      </div>
 
-<span style={{ color:"rgba(116, 114, 7, 0.788)"}}> 
-
-  <FaPlusCircle />
-</span>
-  </a>
-
-    </td>
-    <td>{key.price*key.qnty}</td>
-    <td>
-
-      <Button onClick={()=>{dispatch(dataRemove({id:key.id}))}}>Remove</Button>
-    </td>
-
-</tr>
-
-            </>
-        )
-    })
-    return(
-        <>
-        <center>
-
-        <h1>MY CART </h1>
-        </center>
-
-<h1>Total Amount  <FaRupeeSign />
-{netAmount}</h1>
-
-        <Table striped bordered hover>
-      <thead>
-        <tr>
-          <th>S.NO</th>
-          <th></th>
-          <th>Product Name</th>
-          <th>Category</th>
-          <th>Price</th>
-          <td>Quantity</td>
-          <td>Total Amount</td>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-   {ans}
-      </tbody>
-    </Table>
-
-<div style={{display:"flex" , justifyContent:"right",
-  paddingRight:"50px"}}>
-
-    <Button onClick={()=>{navigate("/checkout")}} >Checkout</Button>
-  </div>
-
-    <br /> <br />
-        </>
-    )
-}
+      <br /><br />
+    </div>
+  );
+};
 
 export default CartData;

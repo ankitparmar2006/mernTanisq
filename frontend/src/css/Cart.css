@@ -1,0 +1,41 @@
+.card-img:hover {
+  transform: scale(1.05);
+}
+
+.hover-card:hover {
+  transform: translateY(-8px);
+}
+
+
+@media (max-width:450px){
+
+
+  
+  #top-icons{
+  
+    display: none;
+  }
+  #top-header{
+
+    width: 440px;
+  }
+
+  #h2-top-heading{
+    font-size: 28px;
+    margin-left: 35px;
+  }
+  #main-navbar{
+    display: none;
+  }
+  #footer{
+    font-size: 7px;
+    margin-left: 0px;
+  }
+   #footer h2{
+    font-size: 8px;
+  }
+  #tanisq-logo{
+    margin-left: 80px;
+  }
+
+}

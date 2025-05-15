@@ -1,26 +1,18 @@
-import Product from "../models/productModel.js";
+const Product = require("../models/Product");
 
-// Search controller
-export const searchProductsController = async (req, res) => {
+const searchProduct = async (req, res) => {
+  const { query } = req.query;
+
   try {
-    const { keyword } = req.query;
-
-    // Agar keyword empty hai toh empty array return kar do
-    if (!keyword) {
-      return res.json([]);
-    }
-
-    // Regex ke through name aur description me search
     const results = await Product.find({
-      $or: [
-        { name: { $regex: keyword, $options: "i" } },
-        { description: { $regex: keyword, $options: "i" } },
-      ],
+      name: { $regex: query, $options: "i" },
     });
 
     res.json(results);
-  } catch (error) {
-    console.error("Search error:", error);
-    res.status(500).json({ error: "Search failed" });
+  } catch (err) {
+    console.error("Search Error:", err);
+    res.status(500).json({ message: "Server Error" });
   }
 };
+
+module.exports = { searchProduct };

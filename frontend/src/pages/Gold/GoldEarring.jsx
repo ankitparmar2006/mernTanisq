@@ -4,7 +4,7 @@ import Cart from "../../component/cart";
 
 import Footer from "../../component/Footer";
 
-
+import  "../../css/Cart.css" 
 const GoldEarring=()=>{
 
 

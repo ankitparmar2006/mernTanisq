@@ -21,6 +21,10 @@ import Profile from "./component/Profile";
 import EditProduct from "./pages/admin/EditProduct";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import AddProduct from "./pages/admin/AddProduct";
+import Search from "./pages/Search";
+import About from "./pages/About";
+import Wishlist from "./pages/Wishlist";
+//import PaymentPage from "./pages/PaymentPage";
 
 
 const App = () => {
@@ -49,7 +53,14 @@ const App = () => {
                             <Route path="productdisplay/:id" element={<ProductDisplay />} />
                             <Route path="login" element={<Login />} />
                             <Route path="signin" element={<Signup />} />
+                                                        <Route path="search" element={<Search />} />
 
+
+{/* <Route path="/payment" element={<PaymentPage />} /> */}
+
+<Route path="/wishlist" element={<Wishlist />} />
+
+<Route path="about" element={<About />} />
 
 <Route path="profile" element={<Profile />} />
 <Route path="/admin/edit/:id" element={<EditProduct />} />
