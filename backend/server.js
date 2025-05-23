@@ -8,6 +8,8 @@ const productRoutes = require('./routes/productRoutes');
 const searchRoute = require("./routes/searchRoute");
 
 //Routing
+const paymentRoute = require("./routes/payment");
+
 
 
 const app = express();
@@ -25,6 +27,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
 app.use("/api/search", searchRoute);
 
+app.use("/api/payment/",paymentRoute);
 
 // Start server
 const PORT = process.env.PORT || 5000; // If not in .env, it will use 5000 by default

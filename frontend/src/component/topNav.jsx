@@ -78,7 +78,7 @@ const TopNav=()=>{
 
 
 <div id="search-btn">
-  <button
+  <button 
       style={buttonStyle}
       onMouseOver={handleMouseOver}
       onMouseOut={handleMouseOut}
@@ -86,7 +86,7 @@ const TopNav=()=>{
       onMouseUp={handleMouseUp}
       onClick={handleClick}
 
-    >
+   >
       Search  🔍
     </button>
  
@@ -98,8 +98,8 @@ const TopNav=()=>{
 
 
           <Nav id='top-icons'>
-            <Nav.Link id='nav-font' href="#home"><IoDiamondOutline id='diamond'/> <br /> DIAMOND</Nav.Link>
-            <Nav.Link  id='nav-font' as={Link} to="payment"><FaStore id='store'/> <br /> STORE </Nav.Link>
+            <Nav.Link id='nav-font' href="#home"><IoDiamondOutline id='diamond'/> <br />  <span id="top-nav-store"> DIAMOND </span></Nav.Link>
+            <Nav.Link  id='nav-font' as={Link} to="payment"><FaStore id='store'/> <br /> <span id="top-nav-store" > STORE</span> </Nav.Link>
             <Nav.Link id='nav-font' as={Link} to="profile">< MdAccountCircle id='account'/> <br /> ACCOUNT </Nav.Link>
             <Nav.Link id='nav-font' href="wishlist"><FaRegHeart id='heart' /> <br /> WISHLIST </Nav.Link>
             <Nav.Link id='nav-font' >    <a href="#" onClick={()=>{navigate("/cartdata")}} style={{textDecoration:"none"}}>

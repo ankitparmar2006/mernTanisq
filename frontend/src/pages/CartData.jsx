@@ -83,7 +83,6 @@ const CartData = () => {
           <h4>Total Amount: <FaRupeeSign /> {netAmount}</h4>
           <Button
             variant="success"
-            onClick={() => navigate("/checkout")}
             style={{ marginTop: "10px", width: "100%", fontWeight: "bold" }}
           >
             Proceed to Checkout
