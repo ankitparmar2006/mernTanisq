@@ -47,6 +47,7 @@ const Cart = ({ type }) => {
       return;
     }
     toast.success(`Proceeding to buy: ${product.name}`);
+    
     // TODO: checkout logic
   };
 
